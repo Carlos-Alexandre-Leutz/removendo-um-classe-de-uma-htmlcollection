@@ -1,0 +1,19 @@
+<div class="teste cor">teste</div>
+<div class="teste cor">teste</div>
+<div class="teste cor">teste</div>
+<div class="teste cor">teste</div>
+<div class="teste cor">teste</div>
+<div class="teste cor">teste</div>
+<button onclick="linpar()">teste</button>
+
+<script>
+    let teste = document.getElementsByClassName('cor');
+    var arr = Array.prototype.slice.call(teste)
+
+    function logArrayElements(element) {
+        let div = element;
+        div.classList.remove('cor')
+
+    }
+    arr.forEach(logArrayElements);
+</script>
